@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Movement</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	</head>
+	<body onload="drawMatrix()">
+		<div id="matrixContainer" class="container" style="margin-top: 50px;">
+		</div>
+	<script>
+	 	var curRow = 0, curCell = 0, returnedRow, returnedCell;
+		var row = Math.floor((Math.random() * 20) + 1);
+		var col = Math.floor((Math.random() * 20) + 1);
+		function drawMatrix() {
+			var matrixHTML = '<table id="m_Board" class="table table-bordered" >';
+
+			for (var i = 0; i < row; i++) {
+				matrixHTML += '<tr style="height: 30px;">';
+				for(var j = 0; j < col; j++){
+						matrixHTML += '<td>'
+						matrixHTML += '</td>';
+				}
+				matrixHTML += '</tr>';
+			}
+
+			matrixHTML += '</table>';
+			document.getElementById('matrixContainer').innerHTML = matrixHTML;
+		}
+
+
+	</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	</body>
+</html>

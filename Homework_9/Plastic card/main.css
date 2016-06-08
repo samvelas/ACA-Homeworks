@@ -1,0 +1,100 @@
+.main {
+	position: relative;
+	border-radius: 15px;
+	background-image: url('source/back.jpg');
+	height: 500px;
+	width: 794px;
+	padding-top: 50px;
+	float: left;
+}
+.headerStyle {
+	
+	border-radius: 5px;
+	margin: 30px;
+	color: white;
+	font-size: 30px;
+	margin-right: 130px;
+	margin-top: 50px;
+	position: absolute;
+	right: 0;
+	width: 200px;
+	
+}
+ .simple {
+	 
+	 margin-left: 65px;
+	 margin-top: 40px;
+	 float: left;
+	 width: 80px;
+ }
+ .m { 
+    width: 800px;
+    margin: 0 auto;
+}
+.cardId {
+	font-size: 70px;
+	color: white;
+	height: 70px;
+	margin-left: 60px;
+	margin-right: 180px;
+	margin-top: 120px;
+	
+}
+
+.form-control {
+	height: 50px !important;
+	font-size:50px !important;
+}
+
+.others {
+	margin-left: 70px;
+	font-size: 18px;
+	color: white;
+}
+
+span.simp {
+	margin-left: 200px;
+	font-size: 13px;
+}
+
+table.valid {
+	width: 100px;
+	margin-left: 263px;
+	color: white;
+	font-size: 13px;
+	float:left;
+	
+}
+
+.name {
+	margin-top: 20px;
+	color: white;
+	font-size: 30px;
+	margin-left: 60px;
+	float: left;
+}
+ 
+
+.logo {
+	width: 120px;
+	height: 75px;
+	background-color: gray;
+	border-radius: 10px;
+	float: right;
+	margin-right: 100px;
+}
+
+#m_logo {
+	width: 100%;
+	height 100%;
+	border-radius: 10px;
+	border: 0px;
+}
+
+.info {
+	float: right;
+	text-align: center;
+	margin: 50px auto;
+	padding-right: 30px;
+	
+}

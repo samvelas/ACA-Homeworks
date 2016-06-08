@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Car Shop</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" style="margin-top: 70px;">
+				<div class="col-md-3">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h3 class="panel-title">Select make</h3>
+					  </div>
+					  <div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="amg">Mercedes</label>
+									<input type="checkbox" name="Merc-chck" id="amg" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="bmw">BMW</label>
+									<input type="checkbox" name="bmw-chck" id="bmw" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="ren">Renault</label>
+									<input type="checkbox" name="reno-chck" id="ren" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="bent">Bentley</label>
+									<input type="checkbox" name="bent-chck" id="bent" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="mas">Masserati</label>
+									<input type="checkbox" name="mas-chck" id="mas" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="porsche">Porsche</label>
+									<input type="checkbox" name="porsche-chck" id="porsche" value="Merc"><br>
+								</form>
+							</li>
+						</ul>
+					  </div>
+					</div>
+					
+					<div>
+						<div class="input-group" style="float: left; width: 48%">
+						  <span class="input-group-addon">$</span>
+							<input type="text" class="form-control" placeholder="Min cost">
+						</div>
+						<div class="input-group" style="float: right; width: 48%">
+						  <span class="input-group-addon">$</span>
+							<input type="text" class="form-control" placeholder="Max cost">
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-3">
+					
+					<div>
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+							<h3 class="panel-title">Select category</h3>
+						  </div>
+						  <div class="panel-body">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<form action="demo_form.asp">
+										<label for="amg">Sedan</label>
+										<input type="radio" name="category"><br>
+									</form>
+								</li>
+								<li class="list-group-item">
+									<form action="demo_form.asp">
+										<label for="bmw">Universal</label>
+										<input type="radio" name="category"><br>
+									</form>
+								</li>
+								<li class="list-group-item">
+									<form action="demo_form.asp">
+										<label for="ren">Hetchback</label>
+										<input type="radio" name="category"><br>
+									</form>
+								</li>
+								<li class="list-group-item">
+									<form action="demo_form.asp">
+										<label for="bent">Jeep</label>
+										<input type="radio" name="category"><br>
+									</form>
+								</li>
+								<li class="list-group-item">
+									<form action="demo_form.asp">
+										<label for="mas">Sport</label>
+										<input type="radio" name="category"><br>
+									</form>
+								</li>
+								<li class="list-group-item">
+									<form action="demo_form.asp">
+										<label for="mas">Offroad</label>
+										<input type="radio" name="category"><br>
+									</form>
+								</li>
+								
+							</ul>
+						  </div>
+						</div>
+					</div>
+					<div style="float: left; width: 48%">
+						<select class="form-control">
+						  <option>From year</option>
+						  <option>2010</option>
+						  <option>2011</option>
+						  <option>2012</option>
+						  <option>2013</option>
+						  <option>2014</option>
+						  <option>2015</option>
+						  <option>2016</option>
+						</select>
+					</div>
+					<div style="float: right; width: 48%">
+						<select class="form-control">
+						  <option>To year</option>
+						  <option>2010</option>
+						  <option>2011</option>
+						  <option>2012</option>
+						  <option>2013</option>
+						  <option>2014</option>
+						  <option>2015</option>
+						  <option>2016</option>
+						</select>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h3 class="panel-title">Current Location</h3>
+					  </div>
+					  <div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="amg">Germany</label>
+									<input type="checkbox" name="Merc-chck" id="amg" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="bmw">Spain</label>
+									<input type="checkbox" name="bmw-chck" id="bmw" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="ren">Russia</label>
+									<input type="checkbox" name="reno-chck" id="ren" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="bent">USA</label>
+									<input type="checkbox" name="bent-chck" id="bent" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="mas">Belgium</label>
+									<input type="checkbox" name="mas-chck" id="mas" value="Merc"><br>
+								</form>
+							</li>
+							<li class="list-group-item">
+								<form action="demo_form.asp">
+									<label for="porsche">UK</label>
+									<input type="checkbox" name="porsche-chck" id="porsche" value="Merc"><br>
+								</form>
+							</li>
+						</ul>
+					  </div>
+					</div>
+					<select class="form-control">
+						<option value="volvo">Engine Type</option>
+					  <optgroup label="Diesel">
+						<option value="volvo">1.6</option>
+						<option value="saab">1.7</option>
+						<option value="saab">1.7i</option>
+						<option value="saab">1.8</option>
+						<option value="saab">2.1</option>
+						<option value="saab">2.5</option>
+					  </optgroup>
+					  <optgroup label="Petrol">
+						<option value="volvo">1.6</option>
+						<option value="saab">1.7</option>
+						<option value="saab">1.7i</option>
+						<option value="saab">1.8</option>
+						<option value="saab">2.1</option>
+						<option value="saab">2.5</option>
+					  </optgroup>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<div class="panel panel-default" style="padding-bottom: 8px">
+					  <div class="panel-heading">
+						<h3 class="panel-title">Additional info</h3>
+					  </div>
+					  <div class="panel-body">
+					<select class="form-control">
+						  <option>Max weight</option>
+						  <option>1200kg</option>
+						  <option>1500kg</option>
+						  <option>1800kg</option>
+						  <option>2100kg</option>
+						  <option>2400kg</option>
+						  <option>2700kg</option>
+						  <option>3000kg</option>
+						  <option>5000kg</option>
+					</select>
+					<select class="form-control" style="margin-top: 30px;">
+						  <option>Steering</option>
+						  <option>Left</option>
+						  <option>Right</option>
+					</select>
+					<select class="form-control" style="margin-top: 30px;">
+						  <option>Color</option>
+						  <option>Red</option>
+						  <option>White</option>
+						  <option>Black</option>
+						  <option>Orange</option>
+						  <option>Gray</option>
+						  <option>Blue</option>
+						  <option>Purple</option>
+						  <option>Yellow</option>
+					</select>
+					<select class="form-control" style="margin-top: 30px;">
+						  <option>Transmission</option>
+						  <option>Automatic</option>
+						  <option>Mechanical</option>
+						  <option>Semi-Automatic</option>
+						  <option>Sport Automatic</option>
+					</select>
+					<select class="form-control" style="margin-top: 30px;">
+						  <option>Drive</option>
+						  <option>Front-wheel</option>
+						  <option>Rear-wheel</option>
+						  <option>Full</option>
+					</select>
+					<input type="text" style="margin-top: 30px; resize:none" name="q" class="form-control" placeholder="More info for better search">
+				</div>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 70px;">
+				<div class="col-md-12" style="text-align: center">
+					<form>
+						<input type="submit" class="btn btn-lg btn-info" value="Refine search"></input>
+					</form>
+				</div>
+			</div>
+		</div>
+	
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

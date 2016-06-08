@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Card Design</title>
+		<link href="main.css" rel="stylesheet">	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="main" >
+			<div>
+				<img src="source/logo.png" height="50" style="margin: 10px; margin-left: 65px;"></img>
+			</div>
+			<div id="m">
+			<div class="simple">
+				<img src="source/sign.jpg" width="70" height="55" border="1"></img>
+			</div>
+			<div class="headerStyle">
+				<b>BankAmericard</b>
+			</div>
+			</div>
+			<div class="cardId">
+				<input id="m_id" oninput="search()" class="form-control" name="m_id">
+			</div>
+			
+			<div class="others">
+				<span>1234</span>
+				<span class="simp">MONTH/YEAR</span>
+			</div>
+			
+			<div style="width: 100px;">
+				<table class="valid">
+					<tr>
+						<th>VALID</th>
+						<th rowspan="2" style="font-size:25px;">12/19</th>					
+					<tr/>
+					<tr>
+						<th>THRU</th>
+					</tr>	
+				</table>
+			</div>
+			<div style="clear: both;"></div>
+			<div class="name">
+				SAMVEL ASATRYAN
+			</div>
+			<div class="logo">
+				<img id="m_logo"></img>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		
+		<div class="info">
+			<table id="m_table" class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>Card brand</th>
+						<th>Beggining</th>
+						<th>Maximum length</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Visa</td>
+						<td>4</td>
+						<td>16 digits</td>
+					</tr>
+					<tr>
+						<td>American Express</td>
+						<td>34 or 37</td>
+						<td>15 digits</td>
+					</tr>
+					<tr>
+						<td>Diners Club</td>
+						<td>30, 36 or 38</td>
+						<td>14 digits</td>
+					</tr>
+					<tr>
+						<td>Discover</td>
+						<td>60, 65 or 62</td>
+						<td>16 digits</td>
+					</tr>
+					<tr>
+						<td>JCB</td>
+						<td>3088, 3096, 31 or 33</td>
+						<td>16 digits</td>
+					</tr>
+					<tr>
+						<td>MasterCard</td>
+						<td>51, 52, 53, 54 or 55</td>
+						<td>16 digits</td>
+					</tr>
+					<tr>
+						<td>enRoute</td>
+						<td>2014 or 2149</td>
+						<td>15 digits</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div style="clear: both;"></div>
+		
+		<script src="script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	</body>
+</html>	

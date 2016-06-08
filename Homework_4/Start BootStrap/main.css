@@ -1,0 +1,426 @@
+@font-face {
+  font-family: "Awesome";
+  src: url(font-awesome-4.6.2/fonts/fontawesome-webfont.ttf);
+}
+
+@font-face {
+  font-family: "logoFont";
+  src: url(font-awesome-4.6.2/fonts/DancingScript-Regular.ttf);
+}
+
+
+@font-face{
+	font-family:"FontAwesome";
+	src:url('font-awesome-4.6.2/fonts/SourceSansPro-Regular.ttf');
+	font-weight:normal;
+	font-style:normal
+}
+
+body {
+	overflow-x: hidden;
+}
+
+h3 {
+	margin: 0;
+}
+
+h4 {
+	text-align: center;
+}
+
+
+
+.headerContainer {
+	background-image: Url('source/header.jpg');
+	padding-top: 30px;
+	height: 750px;
+	width: 100%;
+	
+}
+
+.headerHeads {
+	transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+	font-family: FontAwesome;
+	padding-top: 7px ;
+	padding-bottom: 7px ;
+	top: 0;
+	position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+	background-color: black !important;
+}
+
+.navba {
+	color: white;
+	line-height: 50px;
+	font-size: 15px;
+}
+
+.navba:hover, .navba:visited, .navba:active {
+	text-decoration: none;
+	color: white;
+}
+
+.logo {
+	font-family: logoFont;
+	color: #fed136 !important;
+}
+
+.logo:hover, .logo:visited {
+	color: #fed136;
+}
+
+.hLogo {
+	 margin-top: 10px;
+	 font-size: 25px;
+	 transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.headerContainer, .navba {
+	font-size: 15px;
+}
+
+.headerContainer, .headerHeads {
+	background-image: Url('source/header.jpg');
+}
+
+.headerContainer:hover .headerHeads {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.headerContainer:hover .hLogo {
+	font-size: 35px;
+	transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.introText {
+	font-style: italic;
+    font-size: 40px;
+}
+
+.introHeader {
+	text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    margin-bottom: 50px;
+}
+
+.mainCaptions {
+	font-family: FontAwesome;
+	padding-top: 200px;
+	text-align: center;
+	color: white;
+}
+
+.but {
+	color: #ffffff;
+    background-color: #fed136;
+    border-color: #fed136;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+	margin-top: 30px;
+}
+
+.servicesContainer {
+	padding-top: 100px;
+}
+
+.Ser {
+	text-align: center;
+	font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#underServices {
+	text-align: center;
+	color: gray;
+}
+
+.serviceImages {
+	margin-top: 80px;
+}
+
+.serviceImageContainer {
+	text-align: center;
+}
+
+.serviceImage {
+	width: 110px;
+	height: 110px;
+	margin-bottom: 20px;
+}
+
+.serviceText {
+	text-align: center;
+	font-style: oblique;
+	color: gray;
+	margin-top: 20px;
+}
+
+.portfolioContainer {
+	margin-top: 150px;
+	background-color: #f7f7f7;
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+
+.portfolioImageContainer {
+	background-color: white;
+	padding-bottom: 20px;
+	margin-top: 50px;
+}
+
+.portfolioImage {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 15px;
+}
+
+.hovered {
+	content: url('source/plus.png');
+	background-color: #fed136;
+	position: absolute;
+	width: 92.3%;
+	height: 250px;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	margin-top: 50px;
+	margin-left: 15px;
+	padding-right: 0;
+}
+
+.hovered:hover {
+	opacity: 0.9;
+	transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.portfolioImage:hover {
+	
+	opacity: 0.5;
+}
+
+.portfolioText {
+	text-align: center;
+	font-style: oblique;
+	color: gray;
+	margin-top: 5px;
+}
+
+.aboutContainer {
+	padding-top: 100px;
+	font-family: FontAwesome;
+	padding-bottom: 100px;
+}
+
+.padAbout {
+	padding-right: 70px;
+}
+
+.about-row {
+	margin-top: 50px;
+}
+
+.line-vertical {
+	margin-top: 50px;
+	position: absolute;
+	margin-left: 48.7%;
+	width: 2px;
+	background-color: #f1f1f1;
+	height: 149%;
+}
+
+.aboutHeader {
+	text-align: right;
+	margin-top: 1px;
+	margin-bottom: 3px;
+}
+
+.aboutContent {
+	text-align: right;
+	font-style: oblique;
+	line-height: 1.5;
+}
+
+.aboutImage {
+	font-size: 17px;
+	height: 170px;
+	width: 170px;
+	border: 7px solid;
+	border-color: #f1f1f1;
+}
+
+.aboutHeaderRight {
+	text-align: left;
+	margin-top: 1px;
+	margin-bottom: 3px;
+	margin-left: -50px;
+}
+
+.aboutContentRight {
+	font-size: 17px;
+	text-align: left;
+	font-style: oblique;
+	line-height: 1.5;
+	margin-left: -50px;
+}
+
+.aboutImageRight {
+	height: 170px;
+	width: 170px;
+	border: 7px solid;
+	border-color: #f1f1f1;
+	margin-right: -30px;
+}
+
+.circ {
+	border-radius: 50%;
+	color: white;
+	background-color: #fed136;
+	text-align: center;
+	height: 170px;
+	width: 170px;
+	border: 7px solid;
+	border-color: #f1f1f1;
+	padding-top: 50px;
+}
+
+.teamContainer {
+	padding-top: 100px;
+	background-color: #f7f7f7;
+	padding-bottom: 100px;
+}
+
+.teamImageContainer {
+	margin-top: 50px;
+}
+
+.teamImage {
+	border: 7px solid white;
+	height: 225px;
+	width: 225px;
+}
+
+.teamMemberName {
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 1px;
+}
+
+.teamMemberClass {
+	font-size: 17px;
+	font-style: oblique;
+	font-family: FontAwesome;
+	text-align: center;
+	margin-top: 2px;
+}
+
+.socialButton {
+	height: 40px;
+	width: 40px;
+}
+
+.socialButton:hover {
+	-webkit-filter: grayscale50%);
+}
+
+.smth {
+	margin-top: 50px;
+	color: gray;
+	text-align: center;
+	font-family: FontAwesome;
+	font-style: oblique;
+}
+
+.sponsorContainer {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.sponsorImageContainer {
+	text-align: center;
+}
+
+.sponsorImage {
+	width: 200px;
+	height: 50px;
+}
+
+.contactContainer {
+	padding-top: 120px;
+	padding-bottom: 100px;
+	background-image: Url('source/map-image.png');
+	background-color: black;
+	width: 100%;
+	height: 750px;
+	background-repeat: no-repeat;
+}
+
+.contactHead {
+	color: white;
+}
+
+.formContainer {
+	margin-top: 50px;
+}
+
+.leftColumn {
+	font-size: 15px !important;
+	height: 70px !important;
+	font-family: FontAwesome !important;
+}
+
+.areaText {
+	font-family: FontAwesome;
+}
+
+.footerContainer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footerLeft {
+	text-align: center;
+	font-family: FontAwesome;
+	font-style: oblique;
+}
+
+.footerRight {
+	color: #fed136;
+	font-family: FontAwesome;
+	font-style: oblique;
+}
+
+.footerRight:hover {
+	color: #fed136;
+}
+
+.footerRight:visited {
+	color: #fed136;
+}
+
+.footerRight:active {
+	color: #fed136;
+}
+
+.footerText {
+	font-size: 18px;
+}

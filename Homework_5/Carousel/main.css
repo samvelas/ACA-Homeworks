@@ -1,0 +1,114 @@
+h1 {
+	margin-top: 140px; 
+	font-size: 45px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+h5 {
+	margin: 0;
+}
+
+#mid {
+	text-align: center;
+}
+
+#rig {
+	text-align: right;
+}
+
+.btn {
+	margin-top: 20px;
+}
+
+
+.navContainer {
+	background-color: rgb(247,247,249);
+}
+
+.navigationBrand, .navigationBrand:hover {
+	color: black !important;
+	font-size: 20px;
+}
+
+.others {
+	color: rgb(173,173,175);
+	font-size: 17px;
+}
+
+.others:hover {
+	color: rgb(99,99,100) !important;
+}
+
+.carousel-caption {
+	width: 70%;
+	margin-bottom: 80px;
+	margin-left: -80px;
+}
+
+#first {
+	text-align: left;
+}
+
+#second {
+	text-align: center;
+}
+
+#third {
+	text-align: right;
+}
+
+.carousel-indicators {
+	top: 100px;
+    right: 24px;
+    bottom: auto;
+    left: auto;
+    width: 16px;
+    margin-left: 0;
+}
+
+.headingContainer {
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.circleContainer {
+	padding: 0 auto;
+	text-align: center;
+}
+
+.circ {
+	margin: 0 auto;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color: gray;
+	font-weight: normal;
+}
+
+.menuItemContainer {
+	margin-top: 100px;
+}
+
+.justSquare {
+	padding-top: 220px;
+	width: 500px;
+	height: 500px;
+	background-color: rgb(238,238,238);
+}
+
+#heads {
+	text-align: center;
+}
+
+.oneItem {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.footerContainer {
+	margin-top: 50px;
+	margin-bottom: 40px;
+}

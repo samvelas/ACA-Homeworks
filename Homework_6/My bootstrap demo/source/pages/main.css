@@ -1,0 +1,22 @@
+.iconContainer{
+	margin: 2px 0;
+	background-color: lightgrey;
+	min-height:115px;
+	display:inline-block;
+	
+	padding:10px;
+	min-width:320px;
+
+
+}
+
+.iconContainer:hover{
+	background-color: #8000ff;
+	color: white;
+}
+
+.icon{
+	font-size:60px;
+	padding:10px;
+
+}

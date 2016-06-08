@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Movement</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	</head>
+	<body onload="drawMatrix()">
+		<div id="matrixContainer" class="container" style="margin-top: 50px;">
+		</div>
+		<div class="row" style="margin-top:30px;">
+			<div class="col-sm-offset-5 col-sm-2" style="text-align: center;">
+				<div class="input group input-group-lg">
+					<input id="road" class="form-control" placeholder="Write down your road!">
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px;">
+			<div class="col-sm-offset-5 col-sm-2" style="text-align: center;">
+				<div class="input group input-group-lg">
+					<button id="road" class="btn btn-lg btn-info" style="padding: 10px 80px !important;" onclick="drawRoad()">GO!</button>
+				</div>
+			</div>
+		</div>
+	<script>
+	 	var curRow = 0, curCell = 0, returnedRow, returnedCell;
+		function drawMatrix() {
+			var matrixHTML = '<table id="m_Board" class="table table-bordered" style="width: 100%">';
+
+			for (var i = 0; i < 10; i++) {
+				matrixHTML += '<tr style="width: 100%; height: 50px;">';
+				for(var j = 0; j < 10; j++){
+						matrixHTML += '<td>'
+						matrixHTML += '</td>';
+				}
+				matrixHTML += '</tr>';
+			}
+
+			matrixHTML += '</table>';
+			document.getElementById('matrixContainer').innerHTML = matrixHTML;
+		}
+
+		function Move(i, j, dir){
+			if(dir == "L"){
+				j--;
+			}
+			else if(dir == "R"){
+				j++;
+			}
+			else if(dir == "U"){
+				i--;
+			}
+			else if(dir == "D"){
+				i++;
+			}
+			return [i,j];
+		}
+
+
+		function drawRoad(){
+			var board = document.getElementById('m_Board');
+			var road = document.getElementById('road').value;
+			for (var i = 0; i < 10; i++) {
+				for(var j = 0; j < 10; j++) {
+					board.rows[i].cells[j].style.backgroundColor = "#fff";
+				}
+			}
+			board.rows[0].cells[0].style.backgroundColor = "#f00";
+			for(var cur = 0; cur < road.length; cur++){
+				curRow = Move(curRow, curCell, road[cur].toUpperCase())[0];
+				curCell = Move(curRow, curCell, road[cur].toUpperCase())[1];
+				if(curRow >= 0 && curRow < 10 && curCell >= 0 && curCell < 10){
+					board.rows[curRow].cells[curCell].style.backgroundColor = "#f00";
+				}
+			}
+			if(curRow >= 0 && curRow < 10 && curCell >= 0 && curCell < 10)
+			board.rows[curRow].cells[curCell].style.backgroundColor = "#dd0";
+			curCell = 0, curRow = 0;
+		}
+	</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	</body>
+</html>

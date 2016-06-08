@@ -1,0 +1,92 @@
+li {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+h3, h4 {
+	margin-top: 5px;
+}
+
+h4 {
+	color: gray;
+}
+
+th, td, tr {
+	padding: 15px !important;
+	font-size: 18px;
+}
+
+.others, .navigationBrand {
+	margin-top: 9px;
+}
+
+.navContainer {
+	background-color: rgb(55,58,60);
+	padding: 3px;
+	height: 60px;
+}
+
+.navigationBrand {
+	color: white !important;
+	
+	padding-top: 4px;
+    margin-right: 16px;
+    font-size: 20px;;
+}
+
+.others {
+	color: rgb(155,150,139);
+	font-size: 18px;
+	text-decoration: none;
+	margin-left: 0 !important;
+}
+
+.others:hover {
+	color: rgb(204,205,206) !important;
+	text-decoration: none;
+}
+
+.form-control {
+	margin-left: 300%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 40px !important;
+}
+
+.sideMenu {
+	position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+	overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+}
+
+.nav-sidebar {
+	margin-top: 30px;
+}
+
+.dash {
+	top: 80px;
+}
+
+.circleContainer {
+	text-align: center;
+}
+
+.circ {
+	margin: 0 auto;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: rgb(119,119,119);
+	border-color: rgb(119,119,119);
+}
+
+.table, .table-striped {
+	line-height: 20px;
+}

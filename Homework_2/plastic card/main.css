@@ -1,0 +1,101 @@
+.main {
+	position: relative;
+	border-radius: 15px;
+	background-image: url('source/back.jpg');
+	height: 500px;
+	width: 794px;
+	padding-top: 50px;
+}
+.headerStyle {
+	
+	border-radius: 5px;
+	margin: 30px;
+	color: white;
+	font-size: 30px;
+	margin-right: 130px;
+	margin-top: 50px;
+	position: absolute;
+	right: 0;
+	width: 200px;
+	
+}
+ .simple {
+	 
+	 margin-left: 65px;
+	 margin-top: 40px;
+	 float: left;
+	 width: 80px;
+ }
+ .m { 
+    width: 800px;
+    margin: 0 auto;
+}
+.cardId {
+	font-size: 70px;
+	color: white;
+	margin-left: 60px;
+	margin-top: 120px;
+	
+}
+
+.others {
+	margin-left: 70px;
+	font-size: 18px;
+	color: white;
+}
+
+span.simp {
+	margin-left: 200px;
+	font-size: 13px;
+}
+
+table.valid {
+	width: 100px;
+	margin-left: 263px;
+	color: white;
+	font-size: 13px;
+	float:left;
+	
+}
+
+.name {
+	color: white;
+	font-size: 30px;
+	margin-left: 60px;
+	margin-top: 30px;
+	float: left;
+}
+ 
+.hologram {
+	float: right;
+	margin-right: 100px;
+}
+
+.logo {
+	float: right;
+	margin-right: 100px;
+}
+
+.black_line {
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 50px;
+	background-color: gray;;
+}
+
+.barStyle {
+	padding-right: 60px;
+	height: 50px;
+	margin-top: 40px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-image: url('source/bar.jpg');
+}
+
+#nums {
+	padding-top: 10px;
+	text-align: right;
+	color: white;
+	font-size: 35px;
+	
+}
