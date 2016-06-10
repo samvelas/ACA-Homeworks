@@ -1,0 +1,29 @@
+.container {
+    background-color: rgb(36,49,60);
+    padding: 50px;
+}
+
+#heading {
+    text-align: center;
+    color: white;
+}
+
+.form-control {
+    margin: 20px;
+    background-color: rgb(36,49,60) !important;
+    color: rgb(132,139,145) !important;
+}
+
+.btn-row {
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(26,177,136);
+    color: white;
+}
+
+.btn-lg {
+    margin-left: 30px;
+
+}
