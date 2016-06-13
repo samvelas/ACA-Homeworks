@@ -1,0 +1,13 @@
+.form-control {
+    display: inline-block !important;
+    width: 33% !important;
+}
+
+.btn-info {
+    padding: 12px 50px !important;
+    margin: 20px auto;
+}
+
+.row {
+    text-align: center !important;
+}
