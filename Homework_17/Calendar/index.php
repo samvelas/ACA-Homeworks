@@ -59,8 +59,12 @@
                             echo '<tr>';
                             if($k == 0) {
                                 $start = date('w', strtotime($date));
-                                $date = $curYear . "-" . ($curMonth - 1) . "-" . "01";
-                                $prev =  cal_days_in_month(CAL_GREGORIAN, $curMonth - 1, $curYear);
+                                if($curMonth == 1) {
+                                    $prev =  cal_days_in_month(CAL_GREGORIAN, 12, $curYear - 1);
+                                } else {
+                                    $prev =  cal_days_in_month(CAL_GREGORIAN, $curMonth - 1, $curYear);
+                                }
+
                                 for ($i = $prev - $start + 1; $i <= $prev; $i++) {
                                     echo '<td style="color: lightgray; font-size: 18px;">' . ($i) . '</td>';
                                 }
