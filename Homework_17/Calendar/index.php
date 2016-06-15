@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <title>Calendar</title>
 </head>
 <body onload="res()">
     <?php
@@ -40,13 +40,11 @@
             <div class="col-md-8">
                 <table id="tab" class="table table-bordered">
                     <tr>
-                        <th>Sunday</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
+                        <?php
+                            for($i = 0; $i < 7; $i++){
+                                echo '<th>' . jddayofweek($i - 1, 1) . '</th>';
+                            }
+                        ?>
                     </tr>
                     <?php
 
@@ -63,28 +61,12 @@
                                     echo '<td style="color: lightgray; font-size: 18px;">' . ($i + 1) . '</td>';
                                 }
                                 for ($i = $start; $i < 7; $i++){
-                                    if($curMonth == date("m") && $curday + 1 == date("d")){
-                                        echo '<td style="color: lightseagreen; background-color: greenyellow">';
-                                        echo $curday++;
-                                        echo '</td>';
-                                    } else {
-                                        echo '<td style="color: white;">';
-                                        echo $curday++;
-                                        echo '</td>';
-                                    }
+                                    include "echo_cell.php";
                                 }
                             } else {
                                 for($j = 0; $j < 7; $j++){
                                     if($curday <= $number) {
-                                        if($curMonth == date("m") && $curday == date("d")){
-                                            echo '<td style="color: lightseagreen; background-color: greenyellow">';
-                                            echo $curday++;
-                                            echo '</td>';
-                                        } else {
-                                            echo '<td style="color: white;">';
-                                            echo $curday++;
-                                            echo '</td>';
-                                        }
+                                        include "echo_cell.php";
                                     } else {
                                         echo '<td style="color: lightgray; font-size: 18px;">';
                                         echo $nextMonth++;
