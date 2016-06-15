@@ -4,3 +4,4 @@ function res() {
     var height = table.offsetHeight;
     nav.style.maxHeight = height + "px";
 }
+

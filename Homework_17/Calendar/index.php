@@ -9,12 +9,13 @@
     <?php
         $curYear = date("Y");
         $curMonth = date("m");
-
+        
         if(isset($_GET['year']) && isset($_GET['month'])){
             $curYear = $_GET['year'];
             $curMonth = $_GET['month'];
         }
         $date = $curYear . "-" . $curMonth . "-" . "01";
+
     ?>
     <div class="container">
         <h1>
@@ -31,11 +32,13 @@
                                 if(date(("F, Y"), strtotime($date)) == date(("F, Y"), $expire)){
                                     $style = 'active';
                                 }
-                                echo '<li role="presentation"><a href="index.php?year=' . date(("Y"), $expire) . '&month=' . date("m", $expire) . '" class="list-group-item ' . $style . '" >' . date(("F, Y"), $expire) . '</a></li>';
+                                echo '<li id="' . $i . '" role="presentation"><a href="index.php?year=' . date(("Y"), $expire) . '&month=' . date("m", $expire) .  '" class="list-group-item ' . $style . '" >' . date(("F, Y"), $expire) . '</a></li>';
                                 $style = '';
                         }
+
                     ?>
                 </ul>
+
             </div>
             <div class="col-md-8">
                 <table id="tab" class="table table-bordered">
@@ -55,10 +58,11 @@
 
                             echo '<tr>';
                             if($k == 0) {
-                                $start = date('w', strtotime($date));;
-
-                                for ($i = 0; $i < $start; $i++) {
-                                    echo '<td style="color: lightgray; font-size: 18px;">' . ($i + 1) . '</td>';
+                                $start = date('w', strtotime($date));
+                                $date = $curYear . "-" . ($curMonth - 1) . "-" . "01";
+                                $prev =  cal_days_in_month(CAL_GREGORIAN, $curMonth - 1, $curYear);
+                                for ($i = $prev - $start + 1; $i <= $prev; $i++) {
+                                    echo '<td style="color: lightgray; font-size: 18px;">' . ($i) . '</td>';
                                 }
                                 for ($i = $start; $i < 7; $i++){
                                     include "echo_cell.php";
