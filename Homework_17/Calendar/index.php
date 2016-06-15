@@ -31,7 +31,7 @@
                                 if(date(("F, Y"), strtotime($date)) == date(("F, Y"), $expire)){
                                     $style = 'active';
                                 }
-                                echo '<li role="presentation"><a href="http://localhost/Homework_17/Calendar/index.php?year=' . date(("Y"), $expire) . '&month=' . date("m", $expire) . '" class="list-group-item ' . $style . '" >' . date(("F, Y"), $expire) . '</a></li>';
+                                echo '<li role="presentation"><a href="index.php?year=' . date(("Y"), $expire) . '&month=' . date("m", $expire) . '" class="list-group-item ' . $style . '" >' . date(("F, Y"), $expire) . '</a></li>';
                                 $style = '';
                         }
                     ?>
