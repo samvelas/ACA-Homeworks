@@ -1,0 +1,21 @@
+.r {
+    text-align: center;
+}
+
+.panel {
+    text-align: center;
+    margin-top: 200px;
+}
+
+form {
+    text-align: center !important;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+
+.btn {
+    margin-top: 15px
+}

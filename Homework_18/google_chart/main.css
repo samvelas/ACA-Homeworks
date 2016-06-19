@@ -1,0 +1,55 @@
+#piechart, #pie1chart {
+    display: inline-block;
+    width: 700px;
+    height: 500px;
+}
+
+#pie1chart {
+    float: right;
+}
+
+form {
+    text-align: center;
+}
+
+h1 {
+    color: orangered;
+}
+
+textarea {
+    width: 50%;
+    resize: none;
+    height: 200px;
+    font-size: 18px;
+    color: darkblue;
+    border-radius: 15px;
+    border-color: inherit;
+    box-shadow: none;
+    padding: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: orange;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: orange;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: orange;
+}
+
+:-ms-input-placeholder {
+    color: orange;
+}
+
+button {
+    margin-top: 25px;
+    width: 80px;
+    height: 40px;
+    background-color: orange;
+    border-color: orangered;
+    border-radius: 10px;
+    font-size: 18px;
+}
