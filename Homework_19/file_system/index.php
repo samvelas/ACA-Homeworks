@@ -1,76 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <style>
-            a {
-                font-size: 18px !important;
-            }
-            ul {
-                border: 1px solid cornflowerblue;
-                border-radius: 15px;
-                margin-top: 75px;
-                max-height: 70% !important;
-                overflow-y: auto;
-                padding: 15px;
-                padding-left: 20px;
-            }
-            li {
-                border: 3px solid dodgerblue;
-                padding: 4px 30px;
-                border-radius: 9px;
-                background-color: white;
-            }
-            h1 {
-                text-align: center;
-                margin-top: 30px;
-                color: #5BC0DE;
-                font-size: 50px;
-            }
-            .nav {
-                padding-left: 20px;
-                padding-right: 20px;
-                background-color: #5BC0DE;
-            }
-            .form-control {
-                display: inline-block !important;
-
-            }
-            #search {
-                width: 80%;
-            }
-            #search-btn {
-                width: 17%;
-            }
-            form {
-                padding: 0;
-                margin: 0;
-            }
-            #upload {
-                text-align: center;
-                padding: 30px 30%;
-            }
-            #upload-btn {
-                margin-top: 10px;;
-            }
-            #file {
-                font-size: 18px !important;
-            }
-
-            ::-webkit-scrollbar {
-                width: 12px;
-            }
-
-            ::-webkit-scrollbar-track {
-                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-                border-radius: 10px;
-            }
-
-            ::-webkit-scrollbar-thumb {
-                border-radius: 10px;
-                color: white;
-                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,10);
-            }
-        </style>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <h1>FILE MANAGER</h1>
